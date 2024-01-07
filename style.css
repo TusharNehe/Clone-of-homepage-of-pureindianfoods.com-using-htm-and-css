@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header style */
+
+header {
+    color: white;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 163, 121);
+    font-size: 15px;
+}
+header p span{
+    cursor: pointer;
+    font-weight: 600;
+}
+header p span:hover{
+    text-decoration: underline;
+}
+header i:nth-child(2){
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 35px;
+}
+header span:nth-child(3){
+   color: white;
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 21px;
+    font-size: 18px;
+}
+
+
+
+/* Navbar style */
+
+nav{
+    display: flex;
+    width: 100%;
+    padding: 25px 0;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+nav i{
+    font-size: 25px;
+}
+nav i,img:hover{
+    cursor: pointer;
+    font-size: 26px;
+}
+nav div:last-child{
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+    nav{
+        justify-content: space-between;
+        margin: 0 40px;
+    }
+}
+
+/* subnav */
+
+section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    position: relative;
+}
+section ul li{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: rgb(108, 107, 107);
+}
+section ul li:hover{
+   cursor: pointer;
+   text-decoration: underline;
+}
+#ayurveda,
+ #grocery,
+#personal-care,
+#home-garden,
+#browse
+ {
+    opacity: 0;
+    visibility: hidden;
+    display: grid;
+    position: absolute;
+    border-radius: 10px;
+    top: 40px;
+    padding: 15px 60px 15px 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+#spices{
+    opacity: 0;
+    visibility: hidden;
+    display: grid;
+    position: absolute;
+    border-radius: 10px;
+    top: 5px;
+    left: 270px;
+    padding: 15px 60px 15px 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#ayurveda-menu:hover #ayurveda,
+#grocery-menu:hover #grocery,
+#grocery-menu:hover #grocery:hover #spices-menu:hover #spices,
+#personal-care-menu:hover #personal-care,
+#home-garden-menu:hover #home-garden,
+#browse-menu:hover #browse
+ {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ayurveda-menu i:nth-child(2),
+#grocery-menu i:nth-child(2),
+#personal-care-menu i:nth-child(2),
+#home-garden-menu i:nth-child(2),
+#browse-menu i:nth-child(2)
+{
+    display: none;
+}
+#ayurveda-menu:hover i:nth-child(2),
+#grocery-menu:hover i:nth-child(2),
+#personal-care-menu:hover i:nth-child(2),
+#home-garden-menu:hover i:nth-child(2),
+#browse-menu:hover i:nth-child(2)
+{
+    display: block;
+}
+#ayurveda-menu:hover i:nth-child(1),
+#grocery-menu:hover i:nth-child(1),
+#personal-care-menu:hover i:nth-child(1),
+#home-garden-menu:hover i:nth-child(1),
+#browse-menu:hover i:nth-child(1)
+{
+    display: none;
+}
+
+
+.small-business{
+    width: 75%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.small-business img{
+    width: 40%;
+}
+
+
+
+

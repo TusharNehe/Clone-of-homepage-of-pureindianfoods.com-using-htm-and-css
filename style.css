@@ -101,6 +101,8 @@ section ul li:hover{
     opacity: 0;
     visibility: hidden;
     display: grid;
+    z-index: 999;
+    background-color: white;
     position: absolute;
     border-radius: 10px;
     top: 40px;
@@ -111,6 +113,8 @@ section ul li:hover{
 #spices{
     opacity: 0;
     visibility: hidden;
+    z-index: 999;
+    background-color: white;
     display: grid;
     position: absolute;
     border-radius: 10px;
@@ -159,14 +163,128 @@ section ul li:hover{
 
 
 .small-business{
-    width: 75%;
+    width: 70%;
+    height: 45vh;
+    margin: 30px auto;
     display: flex;
-    margin: auto;
-    justify-content: space-between;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.small-business div{
+  padding: 5% 0 0 5%;
+
+}
+.small-business div p:nth-child(1){
+    font-size: 20px;
+    color: gray;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.small-business div p:nth-child(3){
+    color: rgb(83, 82, 82);
+font-family: sans-serif;
+margin-top: 20px;
+}
+.small-business div h4{
+    font-size: 37px;
+    line-height: 50px;
+    font-style: italic;
+    padding-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .small-business img{
-    width: 40%;
+    width: 30%;
+    border-right: 2px solid black;
+    border-radius: 20px 0px 0px 20px;
+}
+.small-business button{
+    background-color: rgb(92, 130, 92);
+    color: white;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 40px;
+}
+.ghee{
+    background-color: silver;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.ghee-container{
+    background-color: white;
+    width: 60%;
+    padding: 60px;
+    margin: auto;
+    display: flex;
+}
+.ghee-container img{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 40px;
+    width: 43%;
+    padding: 0;
+}
+.ghee-container small:nth-child(1),
+.ghee-container small:nth-child(3)
+{
+    color: rgb(61, 61, 61);
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ghee-container h4{
+    font-size: 37px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ghee-container span:nth-child(5) button{
+    border: 1px solid gray;
+   font-size: 17px;
+   padding: 10px 15px;
+   margin-right: 5px;
+   margin-bottom: 20px;
+   margin-top: 10px;
+   border-radius: 20px;
+   background-color: white;
+}
+.ghee-container span:nth-child(5) button:nth-child(1){
+   background-color: black;
+   color: white;
+}
+.ghee-container span:nth-child(8) button {
+    display: flex;
+    gap: 25px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 21px;
+    margin-bottom: 20px;
+  
+}
+.ghee-container span:nth-child(8) button span {
+   cursor: pointer;
+}
+.usd{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.shipping{
+    margin-bottom: 20px;
+}
+.shipping span{
+   text-decoration: underline;
+   cursor: pointer;
+}
+.addtocart{
+    background-color: rgb(92, 130, 92);
+    color: white;
+    padding: 15px 30%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 40px;
 }
 
 
